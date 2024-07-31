@@ -1,0 +1,42 @@
+<!-- templates/myapp/crypto_sentiment.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Sentiment Analysis</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Crypto Sentiment Analysis</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'crypto_sentiment' %}">Crypto Sentiment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bitcoin Sentiment and Price Trend</h2>
+            <img src="data:image/png;base64,{{ btc_graph }}" alt="Bitcoin sentiment and price trend">
+            <div class="recommendation {{ btc_recommendation|lower }}">
+                {{ btc_recommendation }}
+            </div>
+        </section>
+
+        <section>
+            <h2>Ethereum Sentiment and Price Trend</h2>
+            <img src="data:image/png;base64,{{ eth_graph }}" alt="Ethereum sentiment and price trend">
+            <div class="recommendation {{ eth_recommendation|lower }}">
+                {{ eth_recommendation }}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Crypto Sentiment Analysis</p>
+    </footer>
+</body>
+</html>
