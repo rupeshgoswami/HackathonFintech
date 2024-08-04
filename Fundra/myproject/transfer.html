@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transfer - Fundra Bank</title>
+  <link rel="icon" href="bank.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1><img src="final_logo.png" width="50" height="30"/>&nbsp;&nbsp;Fundra</h1>
+      <p>Gateway to Seamless Banking and Crypto Transfer</p>
+      <nav>
+          <ul>
+              <li><a href="accounts.html">Home</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+              <li><a href="transfer.html">Account Transfer</a></li>
+              <li><a href="transaction.html">Transaction Report</a></li>
+              <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <a style="right: 25px; top: 95px; position: absolute; color: aliceblue;" href="logout.html" class="logout-button">Logout</a>
+      </nav>
+  </div>
+  </header>
+  <main class="container">
+    <h1>Transfer</h1>
+    <div class="image-container">
+    </div>
+    <form action="/submit-transfer" method="post">
+      <label for="account-number">Account Number:</label>
+      <input type="number" id="account-number" name="account-number" required>
+      
+      <label for="account-name">Name of the Person:</label>
+      <input type="text" id="account-name" name="account-name" required>
+      
+      <label for="transfer-amount">Amount to Transfer:</label>
+      <input type="number" id="transfer-amount" name="transfer-amount" required>
+      
+      <button type="submit">TRANSFER</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Fundra Bank. All rights reserved.</p>
+  </footer>
+</body>
+</html>

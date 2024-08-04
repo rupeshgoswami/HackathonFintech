@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Page</title>
+    <link rel="icon" href="bank.png">
+    <link rel="stylesheet" href="dash1.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><img src="final_logo.png" width="50" height="30"/>&nbsp;Fundra</h1>
+            <p>Gateway to Seamless Banking and Crypto Transfer</p>
+            <nav>
+                <ul>
+                    <li><a href="accounts.html">Home</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="withdraw.html">Withdraw</a></li>
+                    <li><a href="transfer.html">Account Transfer</a></li>
+                    <li><a href="transaction.html">Transaction Report</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+                <a style="right: 10px; top: 70px; position: absolute; color: aliceblue;" href="logout.html" class="logout-button">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Welcome to Your Dashboard</h2>
+                <p>Here you can manage your accounts, view recent transactions, and update your profile.</p>
+            </div>
+        </section>
+        <section class="dashboard-overview">
+            <div class="container">
+                <h2>Dashboard Overview</h2>
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h3>Account Balance</h3>
+                        <p>$10,000.00</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Pending Deposits</h3>
+                        <p>$1,200.00</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Pending Withdrawals</h3>
+                        <p>$500.00</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Recent Transactions</h3>
+                        <p>5 Transactions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="charts">
+            <div class="container">
+                <h2>Financial Charts</h2>
+                <div class="chart" id="chart1">
+                    <!-- Placeholder for Chart 1 -->
+                    <h3>Monthly Deposits</h3>
+                    <p>Chart 1 will be displayed here.</p>
+                </div>
+                <div class="chart" id="chart2">
+                    <!-- Placeholder for Chart 2 -->
+                    <h3>Monthly Withdrawals</h3>
+                    <p>Chart 2 will be displayed here.</p>
+                </div>
+            </div>
+        </section>
+        <section class="transaction-history">
+            <div class="container">
+                <h2>Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-07-30</td>
+                            <td>Deposit</td>
+                            <td style="color: green;">+$1,000.00</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>2024-07-28</td>
+                            <td>Withdraw</td>
+                            <td style="color: red;">-$500.00</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>2024-07-25</td>
+                            <td>Transfer</td>
+                            <td style="color: red;">-$300.00</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>2024-07-20</td>
+                            <td>Transfer</td>
+                            <td style="color: green;">+$400.00</td>
+                            <td>0987654321</td>
+                        </tr>
+                        <tr>
+                            <td>2024-07-15</td>
+                            <td>Deposit</td>
+                            <td style="color: green;">+$200.00</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="profile-settings">
+            <div class="container">
+                <h2>Profile Settings</h2>
+                <form method="POST" action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Update Profile</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <form method="POST" action="">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form method="POST" action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Fundra Bank. All rights reserved.</p>
+            <ul>
+                <li><a href="pp.html">Privacy Policy</a></li>
+                <li><a href="tandc.html">Terms and Condition</a></li>
+                <li><a href="contact.html">Contact Information</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

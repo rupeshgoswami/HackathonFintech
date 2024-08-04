@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Report</title>
+    <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+    <style>
+        .font-mono {
+            font-family: monospace;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .pb-5 {
+            padding-bottom: 1.25rem;
+        }
+        .pt-10 {
+            padding-top: 2.5rem;
+        }
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+        .h-10 {
+            height: 2.5rem;
+        }
+        .pl-3 {
+            padding-left: 2rem;
+        }
+        .pr-2 {
+            padding-right: 2rem;
+        }
+        .rounded-md {
+            border-radius: 0.375rem;
+        }
+        .border-gray-500 {
+            border-color: #6b7280;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .relative {
+            position: relative;
+        } 
+        .appearance-none {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .outline-none {
+            outline: none;
+        }
+        .table-auto {
+            width: auto;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .mt-8 {
+            margin-top: 5rem;
+        }
+        .bg-gray-800 {
+            background-color: #2d3748;
+        }
+        .text-white {
+            color: white;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .text-sm {
+            font-size: 0.875rem;
+        }
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .bg-gray-300 {
+            background-color: #e2e8f0;
+        }
+        .bg-white-100 {
+            background-color: white;
+        }
+        .bg-gray-600 {
+            background-color: #718096;
+        }
+        .text-red-600 {
+            color: #e53e3e;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .search-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3182ce;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-button:hover {
+            background-color: #2b6cb0;
+        }
+        .search-button svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <h1><img src="final_logo.png" width="50" height="30"/>&nbsp;Fundra</h1>
+          <p>Gateway to Seamless Banking and Crypto Transfer</p>
+          <nav>
+              <ul>
+                  <li><a href="accounts.html">Home</a></li>
+                  <li><a href="deposit.html">Deposit</a></li>
+                  <li><a href="withdraw.html">Withdraw</a></li>
+                  <li><a href="transfer.html">Account Transfer</a></li>
+                  <li><a href="transaction.html">Transaction Report</a></li>
+                  <li><a href="settings.html">Settings</a></li>
+              </ul>
+              <a style="right: 25px; top: 95px; position: absolute; color: aliceblue;" href="logout.html" class="logout-button">Logout</a>
+          </nav>
+      </div>
+      </header>
+    <h1 class="font-mono font-bold text-3xl text-center pb-5 pt-10">Transaction Report</h1>
+    <hr />
+    <form method="get">
+        <div class="mt-10 h-10 pl-3 pr-2 bg-white border rounded-md border-gray-500 flex justify-between items-center relative">
+            <input type="search" name="daterange" id="search" placeholder="Filter using date range" class="appearance-none w-full outline-none focus:outline-none active:outline-none" />
+            <button type="submit" class="search-button">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Display errors here if needed -->
+    </form>
+    <table class="table-auto mx-auto w-full mt-8">
+        <thead class="bg-gray-800 text-white">
+        <tr class="uppercase font-semibold text-sm">
+            <th class="px-4 py-2">Transaction Type</th>
+            <th class="px-4 py-2">Date</th>
+            <th class="px-4 py-2">Amount</th>
+            <th class="px-4 py-2">Balance After Transaction</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Loop through transactions here -->
+        <tr class="bg-gray-300">
+            <td class="border px-4 py-2 text-center">Example Type</td>
+            <td class="border px-4 py-2 text-center">2024-07-31</td>
+            <td class="border px-4 py-2 text-center">$100.00</td>
+            <td class="border px-4 py-2 text-center">$1000.00</td>
+        </tr>
+        <!-- Add more transaction rows as needed -->
+        <tr class="bg-gray-600 text-white">
+            <th class="px-4 py-2 text-right" colspan="3">Final Balance</th>
+            <th class="px-4 py-2 text-center">$1000.00</th>
+        </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: "Clear",
+                },
+            });
+
+            $('input[name="daterange"]').on("apply.daterangepicker", function (ev, picker) {
+                $(this).val(picker.startDate.format("YYYY-MM-DD") + " - " + picker.endDate.format("YYYY-MM-DD"));
+            });
+
+            $('input[name="daterange"]').on("cancel.daterangepicker", function (ev, picker) {
+                $(this).val("");
+            });
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Fundra Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

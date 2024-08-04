@@ -1,0 +1,145 @@
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+.header-container {
+    background-color: #004080;
+    color: #FFD700;
+    padding-top:10px ;
+    padding-bottom: 1px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(231, 231, 231, 0.1);
+}
+
+.header-container h1 {
+    margin:0;
+}
+
+.header-container p{
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: x-small;
+    letter-spacing: 2px;
+}
+
+/*header completed*/
+
+.box{
+    width:400px;
+    height:850px;
+    background-color: #004080;
+    color: white;
+    margin-top: 40px;
+    font-size: medium;
+    box-shadow: 7px 7px 8px 7px #c7c7c7; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.box h2 {
+    padding-top: 25px;
+}
+
+.box p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.box input{
+    height: 30px;
+    padding: 2px;
+}
+
+.but1{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.box select{
+    width: 370px;
+    height: 40px;
+    padding: 2px;
+}
+
+.box h4{
+    letter-spacing: 1px;
+}
+
+.box a{
+    color: #FFD700;
+    text-decoration: none;
+}
+  
+.watermark{
+    position: absolute; /* Positions the watermark relative to the container */
+  width: 80px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+  bottom: -270px;
+  right: 550px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+/* register complete*/
+.box1{
+    width:400px;
+    height:500px;
+    background-color: #004080;
+    color: white;
+    margin-top: 40px;
+    font-size: medium;
+    box-shadow: 7px 7px 8px 7px #c7c7c7; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.box1 h2 {
+    padding-top: 25px;
+}
+
+.box1 p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.box1 input{
+    height: 30px;
+    padding: 2px;
+}
+
+.but1{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+}
+
+.box1 select{
+    width: 370px;
+    height: 40px;
+    padding: 2px;
+}
+
+.box1 h4{
+    letter-spacing: 1px;
+}
+
+.box1 a{
+    color: #FFD700;
+    text-decoration: none;
+}
+  
+.watermark1{
+    position: absolute; /* Positions the watermark relative to the container */
+  width: 80px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+  bottom: 80px;
+  right: 560px;
+  pointer-events: none;
+  opacity: 0.8;
+}

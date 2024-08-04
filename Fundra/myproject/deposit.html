@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit - Fundra Bank</title>
+  <link rel="icon" href="bank.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1><img src="final_logo.png" width="50" height="30"/>&nbsp;Fundra</h1>
+      <p>Gateway to Seamless Banking and Crypto Transfer</p>
+      <nav>
+          <ul>
+              <li><a href="accounts.html">Home</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+              <li><a href="transfer.html">Account Transfer</a></li>
+              <li><a href="transaction.html">Transaction Report</a></li>
+              <li><a href="settings.html">Settings</a></li>
+          </ul>
+          <a style="right: 25px; top: 95px; position: absolute; color: aliceblue;" href="logout.html" class="logout-button">Logout</a>
+      </nav>
+  </div>
+  </header>
+  <main class="container">
+    <h1>Deposit</h1>
+    <div class="image-container">
+    <form action="/submit-deposit" method="post">
+      <label for="deposit-amount">Amount to Deposit:</label>
+      <input type="number" id="deposit-amount" name="deposit-amount" required>
+      <button type="submit">DEPOSIT</button>
+    </form>
+  </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Fundra Bank. All rights reserved.</p>
+  </footer>
+</body>
+</html>
