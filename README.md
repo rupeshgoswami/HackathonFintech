@@ -1,55 +1,43 @@
+# Cross Border Payment Solution - Fundra App
 
-# Fundra - Fintech Hackathon Project
+Welcome to the Cross Border Payment Solution, a cutting-edge feature of the Fundra App, designed to revolutionize international payments. This project is powered by the Stellar blockchain, providing a secure, transparent, and efficient platform for cross-border transactions.
 
-Welcome to the repository for **Fundra**, a comprehensive solution developed for the Fintech Hackathon. This project aims to all in one financial services with a user-friendly interface and robust functionality.
-Please go to respective branch of this repository to access the code
-## Repository Contents
+## Overview
 
-This repository includes the following key documents and files to give you an in-depth understanding of the project:
+The Cross Border Payment Solution is an integral part of the Fundra App, enabling users to conduct international payments seamlessly. Whether you're an individual or a business, our solution offers an intuitive and user-friendly experience to send and receive money across borders with minimal fees and near-instant settlement times.
 
-1. **Market Summary Document**
-   - File: `HackathonmarketResearch.docx`
-   - Description: Contains the results of a comprehensive market research survey conducted to assess the potential and challenges of the financial services app.
+## Features
 
-2. **Cost Analysis Excel**
-   - File: `CostAnalysis_fundra (1).xlsx`
-   - Description: Provides a detailed cost analysis of the Fundra project, highlighting potential financial impacts and operational costs.
+- **Blockchain-Powered:** Built on the Stellar blockchain, this solution ensures transparency, security, and efficiency in every transaction.
+- **Cross-Border Functionality:** Effortlessly perform international transactions, breaking down the barriers of traditional banking systems.
+- **Low Fees:** Significantly lower transaction costs compared to conventional banking, allowing you to save more on every transaction.
+- **Fast Settlement:** Enjoy near-instant settlement times, making cross-border payments quick, reliable, and hassle-free.
 
-3. **Market Potential Document**
-   - File: `Market Potential Fundra new (2).docx`
-   - Description: Discusses the market potential of Fundra, including a detailed analysis of market trends and growth opportunities.
+## Live Server Access
 
-## Demo and Live Access
+You can explore and interact with the live functionality of this Cross Border Payment Solution by accessing our hosted application. Experience firsthand how the Stellar blockchain is transforming international payments.
 
-We have provided a few resources to help you better understand and interact with Fundra:
+[Access the Solution on Streamlit](https://github.com/rupeshgoswami/easypey/tree/master)
 
-- **Demo Video of Fundra**
-  - [Watch on YouTube](https://www.youtube.com/watch?v=HCqiCPlLGhc)
+In case you encounter any issues request access to updated code, please refer to the following URL:
 
-- **Google Drive Link**
-  - [Access Project Files](https://drive.google.com/file/d/10cIwAmo53pk-wLJbBecT8l9t6PUG3nzi/view?usp=drive_link)
+[GitHub Repository for Fundra App](https://github.com/rupeshgoswami/easypey/tree/master)
 
-- **Live Server Access for Cross Border Payment Functionality**
-  - [Try Fundra on Streamlit](https://easypey.streamlit.app/)
+## Contributing
 
-## Getting Started
+We welcome contributions from the community! If you'd like to contribute to this project, please follow these steps:
 
-To get started with the project, clone the repository using the following command:
-
-```bash
-git clone https://github.com/rupeshgoswami/HackathonFintech.git
-```
-
-Navigate to the project directory and follow the instructions provided in the `README.md` for each specific section to set up and run the project locally.
-
-## Contributions
-
-We welcome contributions from the community. If you have any suggestions or improvements, please feel free to create a pull request or open an issue.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Feel free to modify this as per your needs!
+Thank you for using the Cross Border Payment Solution. We hope it transforms your international payment experience!
+
