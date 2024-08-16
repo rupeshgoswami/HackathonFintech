@@ -6,6 +6,9 @@ Hackathonfintech repository
 
 Welcome to our FinTech startup project! This repository contains all the code and resources for our innovative financial technology solution developed during the hackathon.
 
+# Demo Video of Fundra
+youtube link - https://www.youtube.com/watch?v=HCqiCPlLGhc
+
 ## Table of Contents
 
 - [Introduction](#introduction)
