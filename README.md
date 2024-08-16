@@ -1,6 +1,3 @@
-Here's a draft README file for your GitHub repository:
-
----
 
 # Fundra - Fintech Hackathon Project
 
