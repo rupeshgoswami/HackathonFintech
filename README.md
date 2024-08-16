@@ -7,9 +7,9 @@ Hackathonfintech repository
 Welcome to our FinTech startup project! This repository contains all the code and resources for our innovative financial technology solution developed during the hackathon Fundra.
 
 # Demo Video of Fundra
-youtube link - https://www.youtube.com/watch?v=HCqiCPlLGhc
-Google Drive link - https://drive.google.com/file/d/10cIwAmo53pk-wLJbBecT8l9t6PUG3nzi/view?usp=drive_link
-Live Server Access of cross border payment functionality - https://easypey.streamlit.app/
+- youtube link - https://www.youtube.com/watch?v=HCqiCPlLGhc 
+- Google Drive link - https://drive.google.com/file/d/10cIwAmo53pk-wLJbBecT8l9t6PUG3nzi/view?usp=drive_link
+- Live Server Access of cross border payment functionality - https://easypey.streamlit.app/
 
 ## Table of Contents
 
