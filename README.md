@@ -12,11 +12,15 @@ Fast Settlement: Enjoy near-instant settlement times, making cross-border paymen
 Live Server Access
 You can explore and interact with the live functionality of this Cross Border Payment Solution by accessing our hosted application. Experience firsthand how the Stellar blockchain is transforming international payments.
 
+Live Server Access
+You can explore and interact with the live functionality of this Cross Border Payment Solution by accessing our hosted application. Experience firsthand how the Stellar blockchain is transforming international payments.
+
 Access the Solution on Streamlit
+https://easypey.streamlit.app/
 
 In case you encounter any issues accessing the link, please refer to the following URL:
 
-GitHub Repository for crossborder functionality App
+https://github.com/rupeshgoswami/easypey/tree/master
 
 Explore the Features:
 Once the application is running, you can explore the various features and functionalities of the Cross Border Payment Solution.
