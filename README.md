@@ -12,7 +12,7 @@ This repository includes the following key documents and files to give you an in
 
 1. **Market Summary Document**
    - File: `HackathonmarketResearch.docx`
-   - Description: Contains the results of a comprehensive market research survey conducted to assess the potential and challenges of the cross-border payment industry.
+   - Description: Contains the results of a comprehensive market research survey conducted to assess the potential and challenges of the financial services app.
 
 2. **Cost Analysis Excel**
    - File: `CostAnalysis_fundra (1).xlsx`
