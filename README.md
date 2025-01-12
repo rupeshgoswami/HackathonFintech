@@ -1,8 +1,9 @@
 
 # Fundra - Fintech Hackathon Project
 
-Welcome to the repository for **Fundra**, a comprehensive solution developed for the Fintech Hackathon. This project aims to all in one financial services with a user-friendly interface and robust functionality.
-Please go to respective branch of this repository to access the code
+Welcome to the Fundra repository, a comprehensive financial services platform developed as part of the Fintech Hackathon. This project provides an all-in-one solution for managing financial services, featuring a user-friendly interface coupled with robust and scalable functionality.
+
+To access the codebase, please navigate to the respective branches of this repository. Each branch is dedicated to a specific module or functionality of the platform, ensuring modularity and ease of exploration.
 ## Repository Contents
 
 This repository includes the following key documents and files to give you an in-depth understanding of the project:
